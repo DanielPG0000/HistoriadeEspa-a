@@ -14,7 +14,7 @@
     <nav>
           <ul>
             <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Contenidos.html">Contenidos</a></li>
+            <li><a href="Contidos.html">Contidos</a></li>
             <li><a href="test.html">Test</a></li>
           </ul>
     </nav>
@@ -32,3 +32,35 @@
       <!-- Agrega más preguntas según sea necesario -->
     </ol>
   </section>
+
+<body>
+  <h1> Preguntas tipo test </h1>
+  <section id="juego">
+        <!-- El siguiente código se creará luego de forma dinamica por cada pregunta-->
+        <div class="contenedor-pregunta" id="0">
+          <h2>1 - </h2>
+          <div class="opciones">
+              <label for="" id="l00">
+                <input type="radio" name="p0" onclick="selecionar(0,0)">
+                <span></span>
+                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
+                <span id="p00"></span>
+              </label>
+              <label for="" id="l01">
+                <input type="radio" name="p0" onclick="selecionar(0,1)">
+                <span></span>
+                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
+                <span id="p01"></span>
+              </label>
+              <label for="" id="l02">
+                <input type="radio" name="p0" onclick="selecionar(0,2)">
+                <span></span>
+                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
+                <span id="p02"></span>
+              </label>
+          </div>
+
+    </div>
+  </section>
+  <button id="corregir">Corregir</button>
+</body>
