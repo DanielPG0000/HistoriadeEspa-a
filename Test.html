@@ -5,62 +5,323 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Preguntas tipo test </title>
+  <title>Historia de España </title>
 </head>
 <body>
   <header>
-    <h1>Preguntas tipo test</h1>
+    <h1>Test</h1>
       <!-- Puedes agregar enlaces a diferentes secciones de tu página -->
     <nav>
           <ul>
             <li><a href="Inicio.html">Inicio</a></li>
             <li><a href="Contidos.html">Contidos</a></li>
-            <li><a href="test.html">Test</a></li>
+            <li><a href="Test.html">Test</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+            <li><a href="Videos.html">Videos</a></li>
           </ul>
     </nav>
   </header>
-  <section id="test">
-    <h2>Test - Preguntas tipo test</h2>
-    <!-- Agrega preguntas tipo test aquí -->
-    <ol>
-      <li>
-        <p>Pregunta 1: ¿Cuál fue el evento histórico que ocurrió en...</p>
-        <label><input type="radio" name="q1" value="a"> Respuesta A</label>
-        <label><input type="radio" name="q1" value="b"> Respuesta B</label>
-        <label><input type="radio" name="q1" value="c"> Respuesta C</label>
-      </li>
-      <!-- Agrega más preguntas según sea necesario -->
-    </ol>
-  </section>
 
-<body>
-  <h1> Preguntas tipo test </h1>
-  <section id="juego">
-        <!-- El siguiente código se creará luego de forma dinamica por cada pregunta-->
-        <div class="contenedor-pregunta" id="0">
-          <h2>1 - </h2>
-          <div class="opciones">
-              <label for="" id="l00">
-                <input type="radio" name="p0" onclick="selecionar(0,0)">
-                <span></span>
-                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
-                <span id="p00"></span>
-              </label>
-              <label for="" id="l01">
-                <input type="radio" name="p0" onclick="selecionar(0,1)">
-                <span></span>
-                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
-                <span id="p01"></span>
-              </label>
-              <label for="" id="l02">
-                <input type="radio" name="p0" onclick="selecionar(0,2)">
-                <span></span>
-                <!-- Nos servirá para colocar el simbolo de acierto o no acierto -->
-                <span id="p02"></span>
-              </label>
-          </div>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Historia de España</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  </style>
+  </head>
+  <body>
+  <h1>Test de Historia de España</h1>
+  
+  <div class="question">
+    <p>Pregunta 1: ¿Quién fue el último rey de la dinastía de los Austrias en España?</p>
+    <input type="radio" name="q1" value="a"> Felipe II<br>
+    <input type="radio" name="q1" value="b"> Felipe III<br>
+    <input type="radio" name="q1" value="c"> Carlos II<br>
+    <input type="radio" name="q1" value="d"> Felipe IV<br>
+  </div>
+  
+  <div class="question">
+    <p>Pregunta 2: ¿Qué guerra enfrentó a Isabel I de Castilla y Fernando II de Aragón contra los reinos musulmanes en la península ibérica?</p>
+    <input type="radio" name="q2" value="a"> Guerra de Sucesión<br>
+    <input type="radio" name="q2" value="b"> Guerra de Independencia<br>
+    <input type="radio" name="q2" value="c"> Guerra de los Cien Años<br>
+    <input type="radio" name="q2" value="d"> Guerra de Granada<br>
+  </div>
 
-    </div>
-  </section>
-  <button id="corregir">Corregir</button>
-</body>
+  <div class="question">
+    <p>Pregunta 3: ¿Cuál fue el resultado del matrimonio entre Isabel de Castilla y Fernando de Aragón?</p>
+    <input type="radio" name="q3" value="a"> La unión política de los reinos de Castilla y Aragón.<br>
+    <input type="radio" name="q3" value="b"> La creación de la Monarquía Hispánica, una entidad que incluyó las Coronas de Castilla y Aragón.<br>
+    <input type="radio" name="q3" value="c"> La unificación de las leyes y las instituciones de ambos reinos.<br>
+    <input type="radio" name="q3" value="d"> El inicio de la transición del medievo a la modernidad en España.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 4: ¿Cuál fue el título otorgado por el Papa a Isabel y Fernando tras la conquista de Granada?</p>
+    <input type="radio" name="q4" value="a"> Reyes de Castilla y Aragón.<br>
+    <input type="radio" name="q4" value="b"> Monarcas Hispánicos.<br>
+    <input type="radio" name="q4" value="c"> Reyes Católicos.<br>
+    <input type="radio" name="q4" value="d"> Monarcas Modernos<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 5: ¿Qué medidas tomaron los Reyes Católicos para fortalecer su poder frente a la nobleza?</p>
+    <input type="radio" name="q5" value="a">  Confiscación de señoríos.<br>
+    <input type="radio" name="q5" value="b"> Creación de nuevos cargos de gobierno.<br>
+    <input type="radio" name="q5" value="c">  Implementación de reformas administrativas y políticas.<br>
+    <input type="radio" name="q5" value="d"> Todas las anteriores.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 6: ¿Cuál fue el principal órgano de gobierno creado durante el reinado de los Reyes Católicos?</p>
+    <input type="radio" name="q6" value="a">  Las Cortes de Castilla..<br>
+    <input type="radio" name="q6" value="b"> El Consello de Aragón.<br>
+    <input type="radio" name="q6" value="c"> El Consello de Castela.<br>
+    <input type="radio" name="q6" value="d"> La Santa Irmandade.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 7: ¿Qué tribunal fue creado para mantener la ortodoxia religiosa católica durante el reinado de los Reyes Católicos?</p>
+    <input type="radio" name="q7" value="a">El Consello de Castela.<br>
+    <input type="radio" name="q7" value="b"> Las Cortes de Castilla.<br>
+    <input type="radio" name="q7" value="c"> La Inquisición.<br>
+    <input type="radio" name="q7" value="d"> La Santa Irmandade.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 8: ¿Cuál fue una de las medidas tomadas a nivel de seguridad durante el reinado de los Reyes Católicos?
+    </p>
+    <input type="radio" name="q8" value="a"> Creación de un sistema de corregidores.<br>
+    <input type="radio" name="q8" value="b">Organización de la Santa Irmandade.<br>
+    <input type="radio" name="q8" value="c"> Establecimiento de embajadas en el extranjero.<br>
+    <input type="radio" name="q8" value="d">  Todas las anteriores..<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 9:¿En qué año fue creada la Inquisición durante el reinado de los Reyes Católicos?</p>
+    <input type="radio" name="q9" value="a">  1482.<br>
+    <input type="radio" name="q9" value="b">  1492.<br>
+    <input type="radio" name="q9" value="c">  1478.<br>
+    <input type="radio" name="q9" value="d">  1512.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 10: ¿Qué función tenían los corregidores a nivel local durante el reinado de los Reyes Católicos?</p>
+    <input type="radio" name="q10" value="a">  Gobernar las colonias en América.<br>
+    <input type="radio" name="q10" value="b"> Mantener la ortodoxia religiosa<br>
+    <input type="radio" name="q10" value="c">  Gobernar los municipios y frenar el poder de las oligarquías locales.<br>
+    <input type="radio" name="q10" value="d">  Representar a los reyes en los reinos de Aragón.<br>
+  </div>
+  
+  <div class="question">
+    <p>Pregunta 11: ¿Cuál fue el movimiento intelectual más importante en Europa durante el siglo XVIII?</p>
+    <input type="radio" name="q11" value="a">Renacimiento <br>
+    <input type="radio" name="q11" value="b">  Ilustración<br>
+    <input type="radio" name="q11" value="c">Romanticismo<br>
+    <input type="radio" name="q11" value="d">Barroco<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 12:¿Cuál era uno de los principios fundamentales de la Ilustración en relación con el poder político?</p>
+    <input type="radio" name="q12" value="a">  Autocracia absoluta<br>
+    <input type="radio" name="q12" value="b"> Monarquía absoluta<br>
+    <input type="radio" name="q12" value="c"> Autonomía del poder político<br>
+    <input type="radio" name="q12" value="d">  Teocracia<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 13:¿Qué instituciones fueron destacadas en la difusión del pensamiento ilustrado en España?</p>
+    <input type="radio" name="q13" value="a">  Monasterios<br>
+    <input type="radio" name="q13" value="b"> Sociedades secretas<br>
+    <input type="radio" name="q13" value="c">  Academias y Sociedades Económicas<br>
+    <input type="radio" name="q13" value="d">  Sindicatos<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 14: ¿Quiénes fueron algunos de los ilustrados españoles destacados durante el reinado de Carlos III?</p>
+    <input type="radio" name="q14" value="a">Cervantes y Lope de Vega<br>
+    <input type="radio" name="q14" value="b"> Feijoo y Mayans<br>
+    <input type="radio" name="q14" value="c"> Aranda y Floridablanca<br>
+    <input type="radio" name="q14" value="d">  Isabel y Fernando<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 15: ¿Cuál fue la principal motivación del despotismo ilustrado en España?</p>
+    <input type="radio" name="q15" value="a">  Conservar el poder absoluto del monarca<br>
+    <input type="radio" name="q15" value="b"> Promover la democracia directa<br>
+    <input type="radio" name="q15" value="c"> Conciliar el absolutismo con reformas ilustradas<br>
+    <input type="radio" name="q15" value="d"> Restaurar el feudalismo<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 16:¿Cuál fue uno de los acontecimientos que provocaron la paralización de las reformas ilustradas en España?</p>
+    <input type="radio" name="q16" value="a"> La Guerra de los Siete Años<br>
+    <input type="radio" name="q16" value="b"> El motín de Esquilache<br>
+    <input type="radio" name="q16" value="c">  La Revolución Industrial<br>
+    <input type="radio" name="q16" value="d">  La invasión napoleónica<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 17: ¿Qué movimiento de pensamiento español nació a partir de la Ilustración y fue protagonista a partir de 1808?</p>
+    <input type="radio" name="q17" value="a">Romanticismo<br>
+    <input type="radio" name="q17" value="b">Barroco<br>
+    <input type="radio" name="q17" value="c">Movimiento obrero<br>
+    <input type="radio" name="q17" value="d"> Liberalismo<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 18: ¿Cuál fue la fecha en que se proclamó la República en España tras la renuncia al trono de Amadeo I?</p>
+    <input type="radio" name="q18" value="a">  11 de febrero de 1872<br>
+    <input type="radio" name="q18" value="b"> 11 de febrero de 1873<br>
+    <input type="radio" name="q18" value="c"> 29 de diciembre de 1874<br>
+    <input type="radio" name="q18" value="d"> 29 de febrero de 1873<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 19: ¿Quién fue nombrado presidente del poder ejecutivo tras la proclamación de la República en 1873?</p>
+    <input type="radio" name="q19" value="a">  Nicolás Salmerón<br>
+    <input type="radio" name="q19" value="b">  Estanislao Figueras<br>
+    <input type="radio" name="q19" value="c">Emilio Castelar<br>
+    <input type="radio" name="q19" value="d">  Pi i Margall<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 20:¿Cuál era la principal diferencia entre los unitarios y los cantonalistas en cuanto a la organización política de la República?</p>
+    <input type="radio" name="q20" value="a">  Los unitarios defendían una república federal, mientras que los cantonalistas querían una república unitaria.<br>
+    <input type="radio" name="q20" value="b"> Los unitarios abogaban por una república unitaria, mientras que los cantonalistas preferían una federación.<br>
+    <input type="radio" name="q20" value="c">  Los unitarios apoyaban una república basada en la unión voluntaria de cantones, mientras que los cantonalistas preferían un gobierno centralizado.<br>
+    <input type="radio" name="q20" value="d">Los unitarios querían un gobierno autónomo para cada cantón, mientras que los cantonalistas preferían una administración centralizada.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 21: ¿Quién fue el presidente de la República durante el período en que se elaboró un proyecto de Constitución federal?</p>
+    <input type="radio" name="q21" value="a"> Nicolás Salmerón<br>
+    <input type="radio" name="q21" value="b"> Estanislao Figueras<br>
+    <input type="radio" name="q21" value="c">Emilio Castelar<br>
+    <input type="radio" name="q21" value="d"> Pi i Margall<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 22: ¿Qué evento marcó el fin de la Primera República española y la restauración de la dinastía de los Borbones?</p>
+    <input type="radio" name="q22" value="a">  La abdicación de Alfonso XII<br>
+    <input type="radio" name="q22" value="b"> El pronunciamiento del general Pavía<br>
+    <input type="radio" name="q22" value="c">La guerra carlista<br>
+    <input type="radio" name="q22" value="d"> La proclamación de la Segunda República<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 23:¿Qué general lideró el pronunciamiento que puso fin a la Primera República?</p>
+    <input type="radio" name="q23" value="a"> Martínez Campos<br>
+    <input type="radio" name="q23" value="b">Pavía<br>
+    <input type="radio" name="q23" value="c">Serrano<br>
+    <input type="radio" name="q23" value="d"> Cánovas del Castillo<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 24:¿Qué medida implementó Felipe V para modernizar la armada española después de la Guerra de Sucesión?</p>
+    <input type="radio" name="q24" value="a"> Unificación de distintas escuadras en una única armada real.<br>
+    <input type="radio" name="q24" value="b">Establecimiento de un monopolio comercial en Cádiz.<br>
+    <input type="radio" name="q24" value="c">Incremento de impuestos sobre la pesca.<br>
+    <input type="radio" name="q24" value="d">Creación de nuevos puertos comerciales en América.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 25:¿Cuál fue el impacto de la matrícula de mar en los núcleos pesqueros de Galicia?</p>
+    <input type="radio" name="q25" value="a">Aumento de la productividad pesquera.<br>
+    <input type="radio" name="q25" value="b">Malestar debido a su carácter voluntario.<br>
+    <input type="radio" name="q25" value="c">Malestar debido a su carácter forzoso.<br>
+    <input type="radio" name="q25" value="d"> Mejora en las condiciones laborales de los marineros.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 26:¿Qué ciudad fue elegida como capital del Departamento Marítimo del Norte en 1726?</p>
+    <input type="radio" name="q26" value="a">Cádiz<br>
+    <input type="radio" name="q26" value="b">Ferrol<br>
+    <input type="radio" name="q26" value="c">Cartagena<br>
+    <input type="radio" name="q26" value="d"> A Coruña<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 27:¿Qué medida tomó Carlos III para liberalizar el comercio con América y reducir el monopolio de Cádiz?</p>
+    <input type="radio" name="q27" value="a"> Creación del Servicio de Correos Marítimos.<br>
+    <input type="radio" name="q27" value="b"> Establecimiento de nuevas restricciones comerciales.<br>
+    <input type="radio" name="q27" value="c"> Otorgamiento de subsidios a los comerciantes gaditanos.<br>
+    <input type="radio" name="q27" value="d"> Permitir el comercio directo con América desde varios puertos españoles, incluyendo A Coruña.<br>
+  </div>
+
+  <div class="question">
+    <p>Pregunta 28:¿Qué contribuyó al crecimiento comercial y económico de A Coruña en el siglo XVIII?</p>
+    <input type="radio" name="q28" value="a"> Existencia de Correos Marítimos.<br>
+    <input type="radio" name="q28" value="b">Privilegio de comerciar con América.<br>
+    <input type="radio" name="q28" value="c">Funcionamiento del Arsenal de la Marina.<br>
+    <input type="radio" name="q28" value="d">Todas las anteriores.<br>
+  </div>
+
+  <button onclick="checkAnswers()">Comprobar Respuestas</button>
+  
+  <script>
+  function checkAnswers() {
+    var correctAnswers = {
+      q1:"c",
+      q2:"d",
+      q3:"b",
+      q4:"c",
+      q5:"d",
+      q6:"c",
+      q7:"c",
+      q8:"b",
+      q9:"c",
+      q10:"c",
+      q11:"b",
+      q12:"c",
+      q13:"c",
+      q14:"c",
+      q15:"c",
+      q16:"b",
+      q17:"d",
+      q18:"b",
+      q19:"b",
+      q20:"b",
+      q21:"d",
+      q22:"b",
+      q23:"a",
+      q24:"a",
+      q25:"c",
+      q26:"b",
+      q27:"d",
+      q28:"d"
+    };
+  
+    var userAnswers = {};
+    var questions = document.querySelectorAll('.question');
+  
+    questions.forEach(function(question) {
+      var questionNumber = question.querySelector('input[type="radio"]:checked').name;
+      var answer = question.querySelector('input[type="radio"]:checked').value;
+      userAnswers[questionNumber] = answer;
+    });
+  
+    var score = 0;
+    for (var questionNumber in correctAnswers) {
+      if (userAnswers[questionNumber] === correctAnswers[questionNumber]) {
+        score++;
+      }
+    }
+  
+    alert("Tu puntuación es: " + score + "/" + Object.keys(correctAnswers).length);
+  }
+  </script>
+  
+  </body>
+  </html>
+  
+  
